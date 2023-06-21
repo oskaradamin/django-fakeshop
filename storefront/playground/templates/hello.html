@@ -1,0 +1,19 @@
+<html>
+
+<body>
+
+    {% if name %}
+    <h1>Just checkin if it works,
+        {{ name }}
+    </h1>
+    {% else %}
+    <h1> Just checking if it works, author's name was not provided</h1>
+    {% endif %}
+    <ul>
+        {% for product in products %}
+        <li>{{ product.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
